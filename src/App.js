@@ -27,7 +27,7 @@ function App() {
 
   // 🔥 Fetch with FULL DETAILS (needed for genre)
   const fetchMovies = async (query) => {
-    const res = await fetch(`http://www.omdbapi.com/?apikey=${API_KEY}&s=${query}`);
+    const res = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${query}`);
     const data = await res.json();
 
     if (!data.Search) return;
