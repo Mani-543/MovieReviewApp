@@ -35,7 +35,7 @@ function App() {
     const fullData = await Promise.all(
       data.Search.map(async (m) => {
         const res = await fetch(
-          `http://www.omdbapi.com/?apikey=${API_KEY}&i=${m.imdbID}`
+          `https://www.omdbapi.com/?apikey=${API_KEY}&i=${m.imdbID}`
         );
         return res.json();
       })
